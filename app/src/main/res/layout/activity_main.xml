@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/teal_700"
+        android:columnCount="2"
+        android:rowCount="3"
+        tools:ignore="MissingConstraints,UselessLeaf"
+>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:id="@+id/display"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="10dp"
+            android:height="80dp"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:textSize="25sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="10dp"
+            android:onClick="ClearDisplay"
+            android:background="@color/black"
+            android:text="AC"
+            android:textColor="@color/WhiteSmoke" />
+
+        <GridLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:columnCount="3"
+            android:rowCount="4">
+            <!--First row-->
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="0"
+                android:onClick="numberPad"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="+"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:onClick="numberPad"
+                android:background="@color/ForestGreen"
+                android:text="-"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="2"
+                android:onClick="numberPad"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="*"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+            <!--Third row-->
+            <Button
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="7"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="8"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="9"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <!--second row-->
+            <Button
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:onClick="numberPad"
+                android:background="@color/ForestGreen"
+                android:text="4"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="2"
+                android:layout_column="1"
+                android:onClick="numberPad"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="5"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="2"
+                android:layout_column="2"
+                android:onClick="numberPad"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="6"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+            <!--Third row-->
+            <Button
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:onClick="numberPad"
+                android:text="7"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="1"
+                android:layout_column="1"
+                android:onClick="numberPad"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="8"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_margin="5dp"
+                android:onClick="numberPad"
+                android:background="@color/ForestGreen"
+                android:text="9"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <!--second row-->
+
+            <Button
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:onClick="numberPad"
+                android:text="1"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="2"
+                android:onClick="numberPad"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="3"
+                android:onClick="numberPad"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <Button
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@color/Red"
+                android:onClick="DeleteLastNum"
+                android:text="DEL"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:onClick="numberPad"
+                android:background="@color/ForestGreen"
+                android:text="/"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+
+            <Button
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_gravity="fill_vertical"
+                android:layout_margin="5dp"
+                android:background="@color/DodgerBlue"
+                android:text="="
+                android:onClick="GetResult"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+            <Button
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                android:background="@color/ForestGreen"
+                android:text="0"
+                android:onClick="numberPad"
+                android:textColor="@color/WhiteSmoke">
+
+            </Button>
+
+
+        </GridLayout>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>
